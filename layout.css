@@ -10,7 +10,7 @@ main {
 }
 
 /* --- 0= vertital --- auto vandret (ude i siderne) --*/
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   /* ---  projekt side --*/
 
   .grid-1 {
@@ -86,8 +86,8 @@ main {
   .foto-3 {
     grid-row-start: 1;
     grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
   .foto-4 {
     grid-row-start: 1;
@@ -111,7 +111,7 @@ main {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 5;
   }
   .forside-text {
     padding-right: 50%;
@@ -128,7 +128,6 @@ img {
   footer {
     display: flex;
     justify-content: space-between;
-    margin-inline: 7%;
     border-top: 5px black;
   }
 
@@ -164,10 +163,24 @@ video {
   max-width: 1920px;
   background-position: 50% 10%;
 }
-@media (orientation: portrait) and (min-width: 700px) {
-  .splash {
-    max-width: 100%;
-    height: 56.25vw;
-    background-position: 20% 10%;
+
+/*---------------mobil regler --------------*/
+@media (max-width: 800px) {
+  .grid-1-2 {
+    margin: 0 10%;
+  }
+  .grid-2 {
+    margin-top: 10%;
+    margin: 0 10%;
+  }
+  .text-1,
+  .text-2,
+  .text-3,
+  .foto-1,
+  .foto-2,
+  .foto-3,
+  .foto-4,
+  .col {
+    margin-top: 10%;
   }
 }
