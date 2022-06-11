@@ -1,11 +1,9 @@
 header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 40px 12%;
   background-color: #ffffff;
 }
-
+/*
 .nav-links {
   display: flex;
   gap: 5rem;
@@ -28,26 +26,60 @@ a {
 .logo :hover {
   color: #0f16eb;
 }
+*/
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  place-content: center;
+}
+.under-nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  place-content: center;
+  padding-top: 10px;
+}
+.nav-links {
+  cursor: pointer;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.nav-links {
+  border-bottom-width: 0.1rem;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 20px 60px 0px 60px;
+}
+
+.nav-links a:hover {
+  color: #ce77b9;
+  text-decoration-thickness: 1px;
+}
 
 .under-nav-links {
   cursor: pointer;
   text-align: center;
   min-height: 30px;
   width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 }
 
 .under-nav-links a {
   display: inline-block;
-  padding: 20px 100px 0px 100px;
 }
 
 .under-nav-links a:hover {
-  text-decoration: underline;
-  text-decoration-color: black;
+  color: #ce77b9;
   text-decoration-thickness: 1px;
-}
-.under-nav-links a.active2 {
-  text-decoration: underline 1px black;
 }
 
 footer {
@@ -58,6 +90,7 @@ footer {
   border-top-width: 0.1rem;
   border-top-style: solid;
   border-top-color: #000000;
+  margin-top: 15px;
 }
 
 h1 {
@@ -88,12 +121,30 @@ p {
 .knap a {
   color: #ffd3f4;
   background-color: #4d0a74;
-  padding: 5px 20px;
+  padding: 8px 20px;
   border-radius: 50px;
   font-size: 13px;
   margin-top: 5%;
+  font-family: "Work Sans", sans-serif;
 }
 .knap {
   display: flex;
   justify-content: center;
+}
+.knap2 a {
+  color: #4d0a74;
+  background-color: #ffd3f4;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 13px;
+  margin-top: 5%;
+  font-family: "Work Sans", sans-serif;
+}
+.knap2 {
+  display: flex;
+  justify-content: center;
+}
+.splash h1 {
+  color: #ffffff;
+  font-size: 35px;
 }
