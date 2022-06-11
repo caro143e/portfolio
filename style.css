@@ -18,7 +18,6 @@ header {
   padding-top: 10px;
 }
 .nav-links {
-  cursor: pointer;
   text-align: center;
   padding-bottom: 10px;
 }
@@ -33,12 +32,8 @@ header {
   display: inline-block;
   padding: 20px 60px 0px 60px;
 }
-.nav-links :hover {
-  color: #ce77b9;
-}
 
 .under-nav-links {
-  cursor: pointer;
   text-align: center;
   min-height: 30px;
   width: 100%;
@@ -48,7 +43,8 @@ header {
   display: inline-block;
 }
 
-.under-nav-links :hover {
+.under-nav-links :hover,
+.nav-links :hover {
   color: #ce77b9;
 }
 
@@ -122,24 +118,22 @@ p {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
 }
-.knap {
+.knap,
+.knap2 {
   display: flex;
   justify-content: center;
 }
 .knap2 a {
   color: #4d0a74;
   background-color: #ffd3f4;
-  padding: 8px 20px;
+  padding: 10px 20px;
   border-radius: 50px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 5%;
   font-family: "Work Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
-.knap2 {
-  display: flex;
-  justify-content: center;
-}
+
 .splash h1 {
   color: #ffffff;
   font-size: 2.1rem;
@@ -151,7 +145,6 @@ p {
   min-width: 44px;
   min-height: 44px;
   font-size: 1.1rem;
-  cursor: pointer;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   color: #4d0a74;

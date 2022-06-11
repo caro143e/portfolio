@@ -145,7 +145,7 @@ img {
 .foot_grid p {
   color: #373535;
   font-family: "Work Sans", sans-serif;
-  font-size: 17px;
+  font-size: 0.8rem;
   font-weight: 300;
   text-transform: none;
 }
@@ -182,5 +182,8 @@ video {
   .foto-4,
   .col {
     margin-top: 10%;
+  }
+  video {
+    max-width: 70%;
   }
 }
