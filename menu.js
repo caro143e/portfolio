@@ -1,17 +1,18 @@
-// Lav variablen "btn", der henviser til ".toggle-btn"
-// Lav variablen "menu", der henviser til ".main-menu"
+//  variablen "btn", der henviser til ".toggle-btn"
+//  variablen "menu", der henviser til ".main-menu"
 const btn = document.querySelector(".toggle-btn");
 const menu = document.querySelector(".main-menu");
-// Lav funktionen "toggleMenu()" med følgende funktionalitet
+//  funktionen "toggleMenu()" med følgende funktionalitet
 function toggleMenu() {
   menu.classList.toggle("shown");
 }
+/* toogle = går imellem at add og remove en klasse */
 const menuShown = menu.classList.contains("shown");
 // a) toggle klassen "shown" på menu vha. classList.toggle
 
-// b) lav variablen "menuShown", som siger, at menu-variablen indeholder klassen "shown" via classList.contains("")
+// b)  variablen "menuShown", som siger, at menu-variablen indeholder klassen "shown" via classList.contains("")
 
-// c) spørg om "menuShown" i if-sætningen nedenfor (=> if (menuShown)), og udskift teksten
+// c) spørg om "menuShown" i if-sætningen nedenfor (=> if (menuShown)),
 if (menuShown) {
   console.log(menuShown); // se i konsollen
   // sæt btn.textContent til "Luk", hvis menuShown er "true"

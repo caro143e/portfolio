@@ -151,9 +151,9 @@ p {
   display: none; /* Skjul knappen som standard */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .toggle-btn {
-    display: block; /* Vis knappen, når viewporten er 600px */
+    display: block; /* Vis knappen, når viewporten er 800px */
   }
 
   .main-menu ul {
