@@ -156,7 +156,7 @@ img {
 }
 
 .splash {
-  background-image: url(foto/desktop.svg);
+  background-image: url(foto/desktop.webp);
   background-size: cover;
   height: 35rem;
   width: 100%;
