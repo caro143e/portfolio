@@ -3,25 +3,28 @@
 const btn = document.querySelector(".toggle-btn");
 const menu = document.querySelector(".main-menu");
 //  funktionen "toggleMenu()" med følgende funktionalitet
+
 function toggleMenu() {
   menu.classList.toggle("shown");
 }
 /* toogle = går imellem at add og remove en klasse */
 const menuShown = menu.classList.contains("shown");
-// a) toggle klassen "shown" på menu vha. classList.toggle
+//  toggle klassen "shown" på menu vha. classList.toggle
 
-// b)  variablen "menuShown", som siger, at menu-variablen indeholder klassen "shown" via classList.contains("")
+//   variablen "menuShown", siger, at menu-variablen indeholder klassen "shown"
 
 // c) spørg om "menuShown" i if-sætningen nedenfor (=> if (menuShown)),
 if (menuShown) {
   console.log(menuShown); // se i konsollen
   // sæt btn.textContent til "Luk", hvis menuShown er "true"
+  // hvis vores main menu vises skal vores button være lukket (skjult)
   btn.textContent = "luk";
 } else {
   console.log(menuShown); // se i konsollen
   // sæt btn.textContent til "Menu", hvis menuShown er "false"
+  //  ellers vises menu kanppen (når viewport er 800px er .shown tilstede)
   btn.textContent = "Menu";
 }
-// "toggleMenu()" slutter her
+// lyt efter om man klikker på menu
 btn.addEventListener("click", toggleMenu);
-// Tilføj et klik-event til "btn", der sætter toggleMenu-funktionen i gang
+// klik-event til "btn", der sætter toggleMenu-funktionen i gang
